@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Dimensiones del Paquete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario-envio" action="/submit" method="GET">
+        <div class="contenedor-opciones">
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="pequeño">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Pequeño">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="mediano">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Mediano">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="grande">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Grande">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+        </div>
+
+        <!-- Campo oculto para almacenar el valor de la dimensión seleccionada -->
+        <input type="hidden" name="dimension-seleccionada" id="dimension-seleccionada">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
