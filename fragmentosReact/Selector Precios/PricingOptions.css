@@ -4,27 +4,32 @@ body {
     padding: 0;
 }
 
-.list {
-    margin: 30px;
-    gap: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+ul {
+    margin: 10px;
+    gap: 10px;
+    list-style-type: none;
 }
 
 .lista-precios-grid {
     display: grid; 
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     border: 2px solid black;
     border-radius: 25px;
     width: 400px;
     height: 150px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+
+.lista-precios-grid.selected {
+    background-color: #e0f7fa;
+    border-color: #00796b;
 }
 
 .opcion-gird {
-    grid-column: 1; 
+    grid-column: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +56,7 @@ body {
 }
 
 .descripcion-precios {
-    color: #777; 
+    color: #777;
     font-size: 0.9em;
     align-self: flex-start;
     text-align: start;
@@ -59,13 +64,6 @@ body {
 
 .precio-precios {
     font-weight: bold;
-    color: #e74c3c; 
-    font-size: 1.1em; 
+    color: #e74c3c;
+    font-size: 1.1em;
 }
-
-.lista-precios-grid.selected {
-    background-color: #e0f7fa;
-    border-color: #00796b;
-    transform: scale(1.05);
-}
-
