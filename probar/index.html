@@ -9,6 +9,27 @@
 </head>
 <body>
     <form id="pricing-form" action="/submit" method="POST">
+        <div class="contenedor-opciones">
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="pequeño">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Pequeño">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="mediano">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Mediano">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+            <div class="contenedor-dimension">
+                <div class="dimension-paquete" data-value="grande">
+                    <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Paquete Grande">
+                </div>
+                <div class="sombra-dimension"></div>
+            </div>
+        </div>
+
         <div class="list">
             <div class="lista-precios-grid" onclick="selectOption(this)">
                 <div class="opcion-gird">
@@ -38,36 +59,7 @@
                 </div>
             </div>
         </div>
-        <input type="hidden" name="selected_option" id="selected_option" value="">
-        <div class="list">
-            <div class="lista-precios-grid" onclick="selectOption(this)">
-                <div class="opcion-gird">
-                    <p class="opcion-precios">Express Comun Certificado</p>
-                </div>
-                <div class="datos-gird">
-                    <p class="descripcion-precios">Envio expres, nacional y con bajo coste la cantidad de la lala lalal </p>
-                    <p class="precio-precios">Desde 4.5€</p>
-                </div>
-            </div>
-            <div class="lista-precios-grid" onclick="selectOption(this)">
-                <div class="opcion-gird">
-                    <p class="opcion-precios">Express Rápido Certificado</p>
-                </div>
-                <div class="datos-gird">
-                    <p class="descripcion-precios">Envio rápido, nacional y con buena calidad.</p>
-                    <p class="precio-precios">Desde 6.5€</p>
-                </div>
-            </div>
-            <div class="lista-precios-grid" onclick="selectOption(this)">
-                <div class="opcion-gird">
-                    <p class="opcion-precios">Express Premium Certificado</p>
-                </div>
-                <div class="datos-gird">
-                    <p class="descripcion-precios">Envio premium, nacional con máxima calidad.</p>
-                    <p class="precio-precios">Desde 9.5€</p>
-                </div>
-            </div>
-        </div>
+        <input type="hidden" name="dimension-seleccionada" id="dimension-seleccionada">
         <input type="hidden" name="selected_option" id="selected_option" value="">
         <button type="submit">Enviar</button>
     </form>
